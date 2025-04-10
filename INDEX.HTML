@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+            header h1 {
+                font-size: 2.5rem;
+                margin: 0;
+            }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 14px 20px;
+                margin: 0 15px;
+                transition: background-color 0.3s ease;
+            }
+
+                nav a:hover {
+                    background-color: #555;
+                }
+
+        /* Section Styles */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+            section h2 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            section p {
+                font-size: 1.2rem;
+                line-height: 1.8;
+                margin-bottom: 40px;
+            }
+
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+        }
+
+            .portfolio-item img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .portfolio-item h3 {
+                font-size: 1.5rem;
+                margin: 15px 0;
+            }
+
+            .portfolio-item p {
+                padding: 0 15px 15px;
+            }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+            footer p {
+                margin: 0;
+            }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+                nav a {
+                    padding: 12px 25px;
+                    font-size: 1.2rem;
+                    margin: 5px 0;
+                }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            section p {
+                font-size: 1rem;
+            }
+
+            .portfolio-item img {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            section p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="masha.jpg" alt="About me">
+        <p>Hello! I'm a student of FYIF in MET BKC.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        
+        <p>Check out some of my recent projects below.</p>
+
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="prac1.png" alt="Practical 1">
+                <h3><a href="prac1.html">Practical 1</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac2.png" alt="Practical 2">
+                <h3><a href="prac2.html">Practical 2</a></h3>
+                <p>Work with basic html.</p>
+            </div><div class="portfolio-item">
+                <img src="practical 3.png" alt="Practical 3">
+                <h3><a href="practical 3.html">Practical 3</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac4.png" alt="Practical 4">
+                <h3><a href="prac4.html">Practical 4</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac5.png" alt="Practical 5">
+                <h3><a href="prac5.html">Practical 5</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac6.png" alt="Practical 6">
+                <h3><a href="prac6.html">Practical 6</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac7.png" alt="Practical 7">
+                <h3><a href="prac7.html">Practical 7</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac8.png" alt="Practical 8">
+                <h3><a href="prac8.html">Practical 8</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac9.png" alt="Practical 9">
+                <h3><a href="prac9.html">Practical 9</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac10.png" alt="Practical 10">
+                <h3><a href="prac10.html">Practical 10</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac11.png" alt="Practical 11">
+                <h3><a href="prac11.html">Practical 11</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac12.png" alt="Practical 12">
+                <h3><a href="prac12.html">Practical 12</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac13.png" alt="Practical 13">
+                <h3><a href="prac13.html">Practical 13</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac14.png" alt="Practical 14">
+                <h3><a href="prac14.html">Practical 14</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac15.png" alt="Practical 15">
+                <h3><a href="prac15.html">Practical 15</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac16.png" alt="Practical 16">
+                <h3><a href="prac16.html">Practical 16</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac17.png" alt="Practical 17">
+                <h3><a href="prac17.html">Practical 17</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac18.png" alt="Practical 18">
+                <h3><a href="prac18.html">Practical 18</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac19.png" alt="Practical 19">
+                <h3><a href="prac19.html">Practical 19</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac20.png" alt="Practical 20">
+                <h3><a href="prac20.html">Practical 20</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac21.png" alt="Practical 21">
+                <h3><a href="prac21.html">Practical 21</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac22.png" alt="Practical 22">
+                <h3><a href="prac22.html">Practical 22</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac23.png" alt="Practical 23">
+                <h3><a href="prac23.html">Practical 23</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac24.jpeg" alt="Practical 24">
+                <h3><a href="prac24.html">Practical 24</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="prac25.png" alt="Practical 25">
+                <h3><a href="prac25.html">Practical 25</a></h3>
+                <p>Work with basic html.</p>
+            </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to work with me or just say hi, feel free to reach out!</p>
+        <p>Email: <a href="mailto:umaict@gmail.com">email@example.com</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
++
